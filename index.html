@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="/process" method="post">
+        <h2>Registration Form</h2>
+        <div>
+            <label>First Name: *</label>
+            <input type="text" name="firstname">
+        </div>
+        <div>
+            <label>Last Name: *</label>    
+            <input type="text" name="lastname">
+        </div>
+        <div>
+            <label>Email Address: *</label>    
+            <input type="text" name="email">
+        </div>
+        <div>
+            <label>Password: *</label>    
+            <input type="text" name="password">
+        </div>
+        <div>
+            <label>Confirm Password: *</label>    
+            <input type="text" name="confirmpassword">
+        </div>
+        <div>
+            <label>Date of Birth</label>
+            <input type="date" name="dob">
+        </div>
+        <div>
+            <label>Gender Identity:</label>
+        </div>
+        <div>
+            <input type="radio" name=gender value=male>
+            <label>Male</label>
+            <input type="radio" name=gender value=female>
+            <label>Female</label>
+            <input type="radio" name=gender value=nonbinary>
+            <label>Non-binary</label>
+            <input type="radio" name=gender value=noanswer>
+            <label>I prefer not to answer</label>
+        </div>
+        <div>
+            <label>A short description about myself:</label>
+        </div>
+        <div>
+            <textarea name="description" cols="40" rows="4"></textarea>
+        </div>
+        <div>
+            <label>Favorite Language: </label>
+            <select name="languages">
+                <option>Python</option>
+                <option>JavaScript</option>
+                <option>Ruby</option>
+                <option>Bash</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="emailme" id="accept">
+            <label for="accept">I would like periodic email updates</label>
+        </div>
+        <div>
+            <input type="submit" value="Create Account">
+        </div>
+    </form>
+    <p>* Indicates a required field.</p>
+</body>
+</html>
